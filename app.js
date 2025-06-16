@@ -1,37 +1,54 @@
 import React from "react";
 import {createRoot} from "react-dom/client";
 
+/*
+*Header
+-logo
+-nav items
+*Body
+-search bar
+-resturant container
+-resturant card
+*Footer
+-Copyright
+-links
+-Address
+-Contact
 
-const Heading3=function()    //it iz basically a normal function through we create react componet usin jsx
-{
-   return <h3> Raju</h3>
-        
-   
-}
+*/
 
-const Heading2=()=>(
-     
-        <h2>chintu</h2>
-    
+const Header=()=>
+(
+   <div className="header">
+      <div className="logo-item">
+       <img className="logo" src="html\MyReact\logo.png" alt="logo"></img>
+      </div>
+      <div className="Nav-item">
+       <ul className="items">
+       <li>Home</li>
+       <li>cart</li>
+       <li>Contact</li>
+       <li>About'us</li>
+       </ul>
+
+      </div>
+
+   </div>
 )
 
 
-const Number=10000;
- const Heading=()=>(
-    <div id="parent">
-      
-        
-  <h1 id="head"> {Number}Soumya</h1>
-   <Heading2/>
-   {Heading3()}    
-   <Heading3/>
-   <Heading3></Heading3>
-                          
-  </div>
- )
 
+
+
+const App=()=>(
+
+    <div className="Applayout">
+    <Header/>
+   </div>
+   
+)
 
 
 const add=createRoot(document.querySelector("#chin"));
 
-add.render(<Heading></Heading>);
+add.render(<App/>);

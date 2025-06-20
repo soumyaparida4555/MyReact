@@ -35,19 +35,30 @@
 }
 .resturant-container{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+    
+    
+    font-size: 15px;
+
+
+
+
 
 }
 .img-card-1{
     width: 100%;
 }
 .res-card-1{
-    flex-direction: column;
-    align-content: flex-start;
+    
+    margin: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: small;
+
     padding: 5px;
-    height: 320px;
-    width: 220px;
+    
+    width: 250px;
     
     
     background-color: #f0f0f0;
@@ -60,3 +71,7 @@
     
 }
 
+.search-bar{
+    padding: 15px;
+    cursor: pointer;
+}

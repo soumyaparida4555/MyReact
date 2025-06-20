@@ -1,2 +1,9 @@
-export const Cdn_Url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREzorbsexcvYZz9vbYE_pbITOyd8tb2j-hOaFkJFBBe1RPwvemR4QTGaEoSWCpheS9Wfo&usqp=CAU";
-export const Logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREzorbsexcvYZz9vbYE_pbITOyd8tb2j-hOaFkJFBBe1RPwvemR4QTGaEoSWCpheS9Wfo&usqp=CAU";
+
+
+
+
+
+
+export const Logo="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/b14cd9fc40129fcfb97aa7e621719d07";
+
+ 

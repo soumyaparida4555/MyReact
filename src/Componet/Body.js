@@ -1,26 +1,31 @@
 import ResturantCard from "./ResturantCard";
-import listOfRestaurant from "../Utils/MockData";
+
+import listRes from "../Utils/MockData";
+
+
+
+
 
 
 const Body=()=>
-{
-return <div className="body">
+(
+ <div className="body">
    <div className="search-bar">
-      <input type="search" placeholder="search your food"></input>
-      <button type="submit"> search</button>
+      
+      <button type="submit" >Top Rated Resturant</button>
 
    </div>
    <div className="resturant-container"> 
     
-   {listOfRestaurant.map((resturant)=>
-   {
+   {listRes.map((resturant)=>
+   (
       <ResturantCard key={resturant.id} resdata={resturant}/>
-   })};
+   ))};
 
     
    </div>
 
  </div>
-}
+)
 
 export default Body;

@@ -1,8 +1,8 @@
-let listOfRestaurant = [
- {
+const listRes = [
+   { 
  data: {
  id: "255655",
- name: "Cake & Cream",
+ name:"Cake & Cream",
  cloudinaryImageId: "ac57cc371e73f96f812613f58457aca3",
  areaName: "Jairaj Nagar",
  costForTwo: "₹200 for two",
@@ -12,7 +12,7 @@ let listOfRestaurant = [
  avgRatingString: "4",
  totalRatingsString: "20+",
  },
- },
+   },
  {
  data: {
  id: "350363",
@@ -31,7 +31,7 @@ let listOfRestaurant = [
  avgRatingString: "4.6",
  totalRatingsString: "100+",
  },
- },
+},
  {
  data: {
  id: "154891",
@@ -63,7 +63,7 @@ let listOfRestaurant = [
  avgRating: 4.8,
  veg: true,
  },
- },
+},
  {
  data: {
  id: "798745",
@@ -133,9 +133,9 @@ costForTwo: "₹300 for two",
  parentId: "174585",
  avgRatingString: "3.7",
  },
- },
+},
 ];
 
-export default listOfRestaurant;
+export default listRes;
 
 

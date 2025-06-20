@@ -1,6 +1,6 @@
-import { Logo } from "../Utils/Constaints";
 
 
+import { Logo } from "../Utils/constaint";
 
 const Header=()=>
 (

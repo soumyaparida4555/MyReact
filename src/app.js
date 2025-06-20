@@ -16,10 +16,11 @@ import Header from "./Componet/Header";
 const Applayout=()=>
 {
    
-   return <div className="App-pg">
+   return <div>
 
 
     <Header/>
+
     <Body/>
 
 

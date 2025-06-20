@@ -19,7 +19,7 @@ const Body=()=>
     
    {listRes.map((resturant)=>
    (
-      <ResturantCard key={resturant.id} resdata={resturant}/>
+      <ResturantCard key={resturant.data.id} resdata={resturant}/>
    ))};
 
     

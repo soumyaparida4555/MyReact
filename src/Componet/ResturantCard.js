@@ -1,5 +1,5 @@
 
-
+import {Cdnurl} from "../Utils/constaint";
 
 
 const ResturantCard=(props)=>
@@ -11,7 +11,7 @@ const ResturantCard=(props)=>
   
  return <div className="res-card-1">
  
-          <img className="img-card-1" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/b14cd9fc40129fcfb97aa7e621719d07"></img>  
+          <img className="img-card-1" src={Cdnurl}></img>  
           
       <h3>{name}</h3>     
       <h4>{cuisines.join(",")}</h4>

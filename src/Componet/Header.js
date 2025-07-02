@@ -1,11 +1,15 @@
 
 
+import { useState } from "react";
 import { Logo } from "../Utils/constaint";
 
 const Header=()=>
-(
+{
 
-   <div className="container">
+   const [btnHeader,setbtnHeader]=useState("Login");
+   
+
+ return(  <div className="container">
 
  
   <div className="img-logo">
@@ -19,14 +23,20 @@ const Header=()=>
        <li>Contact</li> 
        <li>About'us</li> 
        <li>Cart</li> 
-
+      
+       <button className="header-btn" onClick={()=>
+         {
+          return  btnHeader.toLowerCase()=="login"?setbtnHeader("Logout"):setbtnHeader("Login");
+         }
+       }>{btnHeader}</button>
+      
 
       </ul>
      
       </div>
 
  </div>
- 
-)
+ )
+}
 
 export default Header;

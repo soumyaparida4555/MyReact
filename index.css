@@ -1,22 +1,29 @@
+
 .container{
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
+    border: 2px  seashell #f0f0f0;
+    border-radius: 10px;
 }
 
 .logo{
-    width: 100px;
+    width: 90px;
 
 }
+
+
+
 .navbar-item{
+    margin: 10px;
     padding: 0px 10px;
 }
 
  .navbar-item > .item {
  
-    font-size: 24px;
+    font-size: 18pxpx;
     display: flex;
-   
+    
+    margin-right: 30px;
     list-style-type: none;
 
 }
@@ -30,16 +37,87 @@
     
 }
 
+.next-line{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.banner-container{
+    margin-top: 20px;
+    
+    margin-left: 80px;
+    
+}
+
+.food-banner{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.banner-img:hover{
+    transform: scale(95%,95%);
+}
+.banner-img{
+    width: 150px;
+    margin-bottom: 30px;
+    
+}
+
+.chain-main{
+    margin: 30px;
+    margin-left: 80px;
+}
+.res-chain-container{
+    display: flex;
+    margin-left: 20px;
+    flex-wrap: wrap;
+    
+}
+.food-chain{
+    
+    width: 200px;
+    height: 60%;
+    margin: 10px;
+    justify-content: baseline;
+    font-size: 12px;
+    
+}
+.food-chain :hover{
+    transform: scale(95%,95%);
+}
+.food-chain-img{
+    height:150px ;
+    width: 200px;
+    border-radius: 10px;
+}
+.chain-text-rat{
+  padding-left: 5px;
+}
+.span-text{
+    margin-left: 10px;
+    
+    font-weight: 600;
+    
+}
+
+
 .search-bar{
-    padding: 10px 0px;
+ display: flex;
+ margin-left: 70px;
+ padding: 15px;
+
+}
+
+.search-container{
+    margin-right: 20px;
 }
 .resturant-container{
     display: flex;
      flex-wrap: wrap;
-     justify-content: space-evenly;
+     
+     margin-left: 70px;
     
     
-    font-size: 15px;
+    font-size: 10px;
 
 
 
@@ -47,31 +125,50 @@
 
 }
 .img-card-1{
-    width: 100%;
+    width:200px;
+    height: 150px;
+    padding-bottom: 10px;
+    border-radius: 20px;
 }
 .res-card-1{
     
-    margin: 10px;
+    
+
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-size: small;
-
-    padding: 5px;
     
-    width: 250px;
+    font-size: 7px;
+     
+      margin: 5px;
+    height: 70%;
+    width: 200px;
+    line-height: 10px;
     
     
-    background-color: #f0f0f0;
-
+    
 }
 
 .res-card-1 :hover{
     cursor: pointer;
-    border: 1px solid black;
+    
+    transform: scale(95%,95%);
     
 }
 
-.search-bar{
-    padding: 15px;
+.search-bar:hover{
+    
     cursor: pointer;
+}
+
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    
+}
+.shimmer-card{
+    width: 175px;
+    height: 200px;
+    
+    margin: 5px;
+    background-color: grey;
 }

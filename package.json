@@ -2,19 +2,20 @@
   "name": "myreact",
   "version": "1.0.0",
   "description": "\"My project\"",
-  
   "scripts": {
     "test": "\"jest\"",
     "start": "parcel index.html",
-     
-    "build":"parcel build index.html"
-
+    "build": "parcel build index.html"
   },
   "author": "\"Soumya\"",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "parcel": "^2.15.2",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-icons": "^5.5.0"
   }
 }

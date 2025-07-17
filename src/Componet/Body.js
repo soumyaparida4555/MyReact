@@ -3,6 +3,7 @@ import {useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import FoodBanner from "./FoodBanner";
 import { TopResturantChain } from "./TopResturantChain";
+import { Link } from "react-router-dom";
 
 
 
@@ -13,14 +14,12 @@ const Body=()=>
 
    const [foodBanner,setFoodBanner]=useState([]);
    const [topResChain,settopResChain]=useState([]);
+   
    const [listResturant,setlistResturant]=useState([]);
    const [filterdResturant,setfilterdResturant]=useState([]);
    const [searchBtn,setsearchBtn]=useState("");
-   
 
-   
 
-   
 
 
     useEffect(()=>
@@ -32,33 +31,32 @@ const Body=()=>
   const fetchData= async()=>{
 
 
-    try{
-       const get= await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.948297208968578&lng=77.7048372762673&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+    
+       const get= await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.3243113&lng=76.5863882&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
   
        const json= await get.json();
 
        
       
+      
        setFoodBanner(json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info);
         settopResChain(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-         setlistResturant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-                 
+         
+         setlistResturant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);          
          setfilterdResturant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+
+
+
     }
-    catch(e){
-      console.log(e);
-    }
+  
       
-      }
-   
-     
-
-
-
-
+      
+      
    
 
-    return listResturant.length===0?<Shimmer/>: ( 
+       
+
+    return listResturant.length===0?<Shimmer/>:( 
     <div className="body">
       
       <div className="banner-container">
@@ -77,9 +75,18 @@ const Body=()=>
      <div className="res-chain-container">
       {topResChain.map((res)=>
       {
-        return <TopResturantChain key={res.info.id} chain={res}/>
+        return <Link className="res-chain-link" key={res.info.id} to={"/restaruant/"+res.info.id}><TopResturantChain   chain={res}/></Link> 
       })}
      </div>
+     
+     <div className="online-container">
+       <h2>Restaurants with online food delivery in Mysore</h2>
+     <div className="container-online">
+        
+     </div>
+
+     </div>
+
       </div>
       <hr className="next-line"></hr>
       <div className="search-bar">
@@ -116,7 +123,7 @@ const Body=()=>
    </div>
    <div className="resturant-container"> 
      {filterdResturant.map((restro)=>(
-      <ResturantCard key={restro.info.id} resdata={restro}/>
+      <Link to={"/restaruant/"+restro.info.id} className="resturant-card-link" key={restro.info.id}> <ResturantCard  resdata={restro}/></Link>
      )
    )}
     

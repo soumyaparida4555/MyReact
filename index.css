@@ -20,7 +20,7 @@
 
  .navbar-item > .item {
  
-    font-size: 18pxpx;
+    font-size: 18px;
     display: flex;
     
     margin-right: 30px;
@@ -32,10 +32,18 @@
 .navbar-item >ul>li{
 
     
-     padding: 0px 10px;
-    margin: 0px 10px;
+     padding: 0px 13px;
+    margin: 0px 13px;
+    
     
 }
+.header-link{
+    padding-right: 40px;
+    padding-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+
 
 .next-line{
     margin-left: 70px;
@@ -99,6 +107,10 @@
     
 }
 
+.res-chain-link{
+    text-decoration: none;
+    color: black;
+}
 
 .search-bar{
  display: flex;
@@ -154,6 +166,11 @@
     
 }
 
+.resturant-card-link{
+    text-decoration: none;
+    color: black;
+}
+
 .search-bar:hover{
     
     cursor: pointer;
@@ -171,4 +188,63 @@
     
     margin: 5px;
     background-color: grey;
+}
+
+
+.restaraunt-menu{
+    margin:80px 80px;
+    
+}
+
+.menu-header-container{
+    width: 900px;
+    border: 18px solid gainsboro;
+    border-radius: 25px;
+    padding-left: 10px;
+
+}
+.menu-header-container:hover{
+    box-shadow: 5px 5px 50px red;
+}
+
+.offer-main-container{
+    display: flex;
+    padding-right: 10px;
+    
+    
+}
+.offer-container{
+    width: 200px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 23px;
+    margin: 10px;
+    
+    line-height: 1px;
+    
+}
+.offer-menu{
+    
+    display: flex;
+    padding-right: 10px;
+    
+    justify-content: center;
+    
+}
+
+
+
+
+
+.offer-logo{
+    
+    width: 40px;
+    
+    
+    
+}
+
+.offer-info{
+    
+    padding-left: 20px;
 }
